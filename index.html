@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winxbet BR</title>
+    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <img src="./images/logo.png" alt="winxbet-logo" class="logo">
+            <a class="btn-primary" href="">
+                REGISTER
+            </a>
+            <a href="" class="btn-primary">
+                LOGIN
+            </a>
+        </header>
+        <section class="hero">
+            <img src="./images/hero.png" alt="">
+            <div class="hero-box">
+                <h1>
+                    GET <span class="mark">15% DISCOUNT</span> BONUS <br>
+                    <span class="light">CASINO & SPORT</span>
+                </h1>
+                <a href="" class="btn-primary hero-btn">
+                    GET NOW
+                </a>
+            </div>
+        </section>
+        <section class="promo">
+            <div class="promo-toggle">
+                <header class="promo-title">
+                    CASINO RULES
+                </header>
+                <ul class="promo-rules">
+                    <li>RULE 1</li>
+                    <li>RULE 2</li>
+                    <li>RULE 3</li>
+                    <li>RULE 4</li>
+                    <li>RULE 5</li>
+                </ul>
+            </div>
+            <div class="promo-toggle">
+                <header class="promo-title">
+                    SPORT RULES
+                </header>
+                <ul class="promo-rules">
+                    <li>RULE 1</li>
+                    <li>RULE 2</li>
+                    <li>RULE 3</li>
+                    <li>RULE 4</li>
+                    <li>RULE 5</li>
+                </ul>
+            </div>
+        </section>
+        <footer class="footer">
+            <a href="
+            ">
+            <i class="fab fa-twitter"></i>
+             </a>
+            <a href="">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </footer>
+    </main>
+
+    <script type="text/javascript">
+    
+    const toggle = document.querySelectorAll('.promo-title');
+    const rules = document.querySelectorAll('.promo-rules');
+
+    const rulesToggle = (index) => {
+        if(rules[index].style.display === '' || rules[index].style.display === 'none') {
+            rules[index].style.display = 'block'
+            return
+        }
+        rules[index].style.display = 'none'
+    }
+
+    toggle.forEach((x, index) => {
+        x.onclick = () => {
+            rulesToggle(index)
+        }
+    }, true)
+
+
+    </script>
+
+</body>
+</html>
