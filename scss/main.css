@@ -100,6 +100,7 @@ a {
 
 :root {
   --ff-clr-primary: #FFD300;
+  --ff-clr-secondary: #000;
 }
 
 .header {
@@ -168,6 +169,22 @@ a {
   max-width: 800px;
 }
 
+.hero a {
+  font-size: 2rem;
+  font-weight: 700;
+  width: 200px;
+  height: 60px;
+}
+
+.hero .btn-text {
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
 .hero-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,6 +204,24 @@ a {
 .hero-box h1 {
   max-width: 400px;
   margin-bottom: 2rem;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 30%;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 30%;
+  }
 }
 
 @media (min-width: 70em) {
@@ -210,8 +245,8 @@ a {
     max-width: 700px;
   }
   .hero-box a {
-    width: 200px;
-    height: 40px;
+    width: 300px;
+    height: 60px;
   }
 }
 
@@ -238,8 +273,8 @@ a {
 }
 
 .promo-title {
-  background: var(--ff-clr-primary);
-  color: #000;
+  background: var(--ff-clr-secondary);
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
